@@ -16,7 +16,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.shreeyansh.bloomboom"
-    compileSdk = 35  // ⬅️ CHANGED FROM 34 TO 35
+    compileSdk = 36  // ⬅️ CHANGED FROM 34 TO 35
     ndkVersion = "27.0.12077973"
 
     compileOptions {
@@ -30,7 +30,7 @@ android {
 
     defaultConfig {
         applicationId = "com.shreeyansh.bloomboom"
-        minSdk = 23  // Keep this at 23
+        minSdk = flutter.minSdkVersion  // Keep this at 23
         targetSdk = 35  // ⬅️ CHANGED FROM 34 TO 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
